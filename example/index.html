@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>autodark example</title>
+    <title>invertColors example</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class="bg-slate-200">
+<body class="bg-slate-50 text-center text-slate-900">
 
-<h1 class="text-center text-4xl text-purple-700 font-bold">
-    This is an example using autodark
+<h1 class="text-4xl text-purple-700 font-bold m-8">
+    Current mode is <span class="font-mono underline text-black">light</span>
 </h1>
 
+<p class="m-8 text-orange-700">
+    The colors for this demo's dark mode were auto generated via
+    <code class="text-black">invertColors</code>
+    🎉
+</p>
+
+<button class="rounded-lg bg-green-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-green-600 hover:bg-green-700 hover:ring-green-700">
+    Toggle dark mode
+</button>
+
+<script>
+    document.querySelector('button').addEventListener('click', () => {
+        const isDarkMode = document.documentElement.classList.toggle('dark');
+        document.querySelector('span').textContent = isDarkMode ? 'dark' : 'light'
+    })
+</script>
 </body>
 </html>

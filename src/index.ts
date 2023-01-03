@@ -1,4 +1,2 @@
-import plugin from "tailwindcss/plugin";
-import {autoDark} from "./autodark";
-
-export = plugin(autoDark)
+import {invertColors} from "./invertColors";
+export = invertColors

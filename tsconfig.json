@@ -12,15 +12,8 @@
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "stripInternal": true,
+    "skipLibCheck": true,
     "outDir": "dist",
-    "allowJs": true
-  },
-  "include": [
-    "./src/*",
-    "./test/*"
-  ],
-  "exclude": [
-    "./example/*"
-  ]
+    "rootDir": "src"
+  }
 }

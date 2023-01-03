@@ -1,0 +1,7 @@
+dist/*.test.js
+dist/*.test.d.ts
+example/*
+src/*
+tsconfig.json
+.nvmrc
+clean.js
