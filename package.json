@@ -22,7 +22,11 @@
     "dark theme",
     "color"
   ],
-  "author": "Colby M. White",
+  "author": "Colby M. White (https://colbywhite.dev)",
+  "repository": {
+    "url": "https://github.com/colbywhite/tailwind-color-inverter",
+    "type": "git"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.11.18",
