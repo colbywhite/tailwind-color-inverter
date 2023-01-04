@@ -5,3 +5,4 @@ src/*
 tsconfig.json
 .nvmrc
 clean.js
+netlify.toml

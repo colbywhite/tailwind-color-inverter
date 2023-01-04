@@ -12,7 +12,10 @@
     "test": "vitest run",
     "test:watch": "vitest watch",
     "clean": "rimraf dist",
-    "build": "tsc"
+    "build": "run-s build:*",
+    "build:pkg": "tsc",
+    "build:css": "tailwindcss -i ./example/input.css -o ./example/dist/output.css -c ./example/tailwind.config.js",
+    "cd": "run-s test build"
   },
   "keywords": [
     "tailwind",
