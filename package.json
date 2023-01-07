@@ -1,9 +1,10 @@
 {
   "name": "@colbyw/tailwind-color-inverter",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "A utility to invert TailwindCSS colors to auto generate colors for a dark theme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://tailwind-color-inverter.netlify.app",
   "scripts": {
     "start": "npm-run-all build --parallel dev:*",
     "dev:css": "tailwindcss -i ./example/input.css -o ./example/dist/output.css -c ./example/tailwind.config.js --watch",

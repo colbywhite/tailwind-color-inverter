@@ -7,7 +7,7 @@ const lightTheme = {
 }
 
 const darkTheme = {
-    colors: invertColors(defaultColors),
+    colors: invertColors(lightTheme.colors),
 }
 
 /** @type {import('tailwindcss').Config} */

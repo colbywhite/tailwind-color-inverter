@@ -6,21 +6,117 @@
     <title>invertColors example</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class="bg-slate-50 text-center text-slate-900">
+<body class="bg-slate-50 text-center text-slate-900 px-4 md:px-0 max-w-screen-sm mx-auto">
 
-<h1 class="text-4xl text-purple-700 font-bold m-8">
-    Current mode is <span class="font-mono underline text-black">light</span>
-</h1>
+<header class="my-8 text-center font-bold tracking-wider">
+    <h1 class="text-4xl text-purple-700">
+        tailwind-color-inverter
+    </h1>
+</header>
 
-<p class="m-8 text-orange-700">
-    The colors for this demo's dark mode were auto generated via
-    <code class="text-black">invertColors</code>
-    🎉
-</p>
+<main class="max-w-2xl mx-auto">
+    <section>
+        A utility to invert
+        <a class="underline font-semibold hover:no-underline hover:text-black text-purple-700"
+           href="https://tailwindcss.com">
+            TailwindCSS
+        </a>
+        colors to auto generate colors for a dark theme.
 
-<button class="rounded-lg bg-green-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-green-600 hover:bg-green-700 hover:ring-green-700">
-    Toggle dark mode
-</button>
+        It is intended to be used in conjunction with Tailwind and the
+        <a class="underline font-semibold hover:no-underline hover:text-black text-purple-700"
+           href="https://github.com/crswll/tailwindcss-theme-swapper">
+            theme-swapper plugin
+        </a>
+        .
+    </section>
+
+    <section class="mt-8">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mx-auto max-w-2xl justify-center cursor-default">
+            <div class="px-2 text-sm py-1 rounded-md border-2 ring-2 ring-opacity-30 hover:ring-opacity-60 text-emerald-400 border-emerald-400 ring-emerald-400">
+                <p>emerald-400</p>
+            </div>
+            <div class="px-2 text-sm py-1 rounded-md border-2 ring-2 ring-opacity-30 hover:ring-opacity-60 text-emerald-500 border-emerald-500 ring-emerald-500">
+                <p>emerald-500</p>
+            </div>
+            <div class="px-2 text-sm py-1 rounded-md border-2 ring-2 ring-opacity-30 hover:ring-opacity-60 text-orange-600 border-orange-600 ring-orange-600">
+                <p>orange-600</p>
+            </div>
+            <div class="px-2 text-sm py-1 rounded-md border-2 ring-2 ring-opacity-30 hover:ring-opacity-60 text-orange-300 border-orange-300 ring-orange-300">
+                <p>orange-300</p>
+            </div>
+            <div class="px-2 text-sm py-1 rounded-md border-2 ring-2 ring-opacity-30 hover:ring-opacity-60 text-yellow-700 border-yellow-700 ring-yellow-700">
+                <p>yellow-700</p>
+            </div>
+            <div class="px-2 text-sm py-1 rounded-md border-2 ring-2 ring-opacity-30 hover:ring-opacity-60 text-yellow-200 border-yellow-200 ring-yellow-200">
+                <p>yellow-200</p>
+            </div>
+            <div class="px-2 text-sm py-1 rounded-md border-2 ring-2 ring-opacity-30 hover:ring-opacity-60 text-cyan-200 border-cyan-200 ring-cyan-200">
+                <p>cyan-200</p>
+            </div>
+            <div class="px-2 text-sm py-1 rounded-md border-2 ring-2 ring-opacity-30 hover:ring-opacity-60 text-cyan-700 border-cyan-700 ring-cyan-700">
+                <p>cyan-700</p>
+            </div>
+        </div>
+        <button class="mt-8 rounded-lg bg-purple-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-purple-600 hover:bg-purple-700 hover:ring-purple-700">
+            Toggle dark mode
+        </button>
+    </section>
+
+    <section class="mt-8">
+    </section>
+
+</main>
+
+
+<footer class="mt-4 flex flex-row justify-between gap-2 border-t-2 px-1 pt-2 text-xs">
+    <div>
+        <p class="text-center">Built by</p>
+        <p class="my-1.5">
+            <a class="underline font-semibold hover:no-underline hover:text-black text-purple-700"
+               href="https://colbywhite.dev">
+                Colby M. White
+            </a>
+        </p>
+    </div>
+    <div>
+        <p class="text-center">More info</p>
+        <ul class="disc-none flex flex-row justify-center gap-2 font-bold my-1.5">
+            <li>
+                <a class="grayscale transition hover:grayscale-0 focus:grayscale-0"
+                   href="https://github.com/colbywhite/tailwind-color-inverter">
+                    <svg class="h-4 w-4" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.49933 0.25C3.49635 0.25 0.25 3.49593 0.25 7.50024C0.25 10.703 2.32715 13.4206 5.2081 14.3797C5.57084 14.446 5.70302 14.2222 5.70302 14.0299C5.70302 13.8576 5.69679 13.4019 5.69323 12.797C3.67661 13.235 3.25112 11.825 3.25112 11.825C2.92132 10.9874 2.44599 10.7644 2.44599 10.7644C1.78773 10.3149 2.49584 10.3238 2.49584 10.3238C3.22353 10.375 3.60629 11.0711 3.60629 11.0711C4.25298 12.1788 5.30335 11.8588 5.71638 11.6732C5.78225 11.205 5.96962 10.8854 6.17658 10.7043C4.56675 10.5209 2.87415 9.89918 2.87415 7.12104C2.87415 6.32925 3.15677 5.68257 3.62053 5.17563C3.54576 4.99226 3.29697 4.25521 3.69174 3.25691C3.69174 3.25691 4.30015 3.06196 5.68522 3.99973C6.26337 3.83906 6.8838 3.75895 7.50022 3.75583C8.1162 3.75895 8.73619 3.83906 9.31523 3.99973C10.6994 3.06196 11.3069 3.25691 11.3069 3.25691C11.7026 4.25521 11.4538 4.99226 11.3795 5.17563C11.8441 5.68257 12.1245 6.32925 12.1245 7.12104C12.1245 9.9063 10.4292 10.5192 8.81452 10.6985C9.07444 10.9224 9.30633 11.3648 9.30633 12.0413C9.30633 13.0102 9.29742 13.7922 9.29742 14.0299C9.29742 14.2239 9.42828 14.4496 9.79591 14.3788C12.6746 13.4179 14.75 10.7025 14.75 7.50024C14.75 3.49593 11.5036 0.25 7.49933 0.25Z"
+                              fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="grayscale transition hover:grayscale-0 focus:grayscale-0"
+                   href="https://www.npmjs.com/package/@colbyw/tailwind-color-inverter">
+                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
+                        <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z" fill="currentColor"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p class="text-center">Built with</p>
+        <ul class="disc-none flex flex-row justify-center gap-2 font-bold my-1.5">
+            <li>
+                <a class="grayscale transition hover:grayscale-0 focus:grayscale-0" href="https://tailwindcss.com">
+                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 32">
+                        <g fill-rule="evenodd" clip-rule="evenodd">
+                            <path fill="#38bdf8"
+                                  d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"/>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
 
 <script>
     document.querySelector('button').addEventListener('click', () => {
