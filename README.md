@@ -12,6 +12,8 @@ It is intended to be used in conjunction with [Tailwind] and the [theme-swapper 
 
 # Usage
 
+Visit the Tailwind [playground](https://play.tailwindcss.com/l1WFZ1L5PR) for a simple demo.
+
 ```javascript
 // file: tailwind.config.js
 const themeSwapper = require('tailwindcss-theme-swapper')
