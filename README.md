@@ -1,4 +1,10 @@
-# tailwind-color-inverter
+[![npm version badge](https://img.shields.io/npm/v/@colbyw/tailwind-color-inverter/latest)](https://www.npmjs.com/package/@colbyw/tailwind-color-inverter)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@colbyw/tailwind-color-inverter/latest)](https://bundlephobia.com/package/@colbyw/tailwind-color-inverter)
+[![last commit](https://img.shields.io/github/last-commit/colbywhite/tailwind-color-inverter/main)](https://github.com/colbywhite/tailwind-color-inverter)
+![license](https://img.shields.io/npm/l/@colbyw/tailwind-color-inverter)
+![keywords](https://img.shields.io/github/package-json/keywords/colbywhite/tailwind-color-inverter)
+
+# @colbyw/tailwind-color-inverter
 
 A utility to invert [TailwindCSS] colors to auto generate colors for a dark theme.
 
